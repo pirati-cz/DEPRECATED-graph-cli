@@ -1,0 +1,34 @@
+{
+  "name": "graph-cli",
+  "version": "0.0.1",
+  "description": "Open Graph API cli (shell)",
+  "keywords": [
+    "pirate",
+    "party",
+    "graph",
+    "api",
+    "cli",
+    "shell"
+  ],
+  "author": {
+    "name": "Pirate Party Czech Republic",
+    "email": "dev@pirati.cz"
+  },
+  "license": "LGPL-3.0+",
+  "main": "./index",
+  "preferGlobal": "true",
+  "bin": { "graph": "./bin/graph-cli.js" },
+  "scripts": {
+    "test": "coffee -o ./test/lib/ -c ./test/src/ && mocha -R spec ./test/lib",
+    "prepublish": "coffee -o ./lib/ -c ./src/"
+  },
+  "devDependencies": {
+    "async": "~0.2.9",
+    "mocha": "~1.16.2",
+    "should": "~2.1.1",
+    "coffee-script": "~1.6.3"
+  },
+  "dependencies": {
+    "yargs": "~1.2.1"
+  }
+}
