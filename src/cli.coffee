@@ -1,7 +1,4 @@
-cliff = require('cliff')
-prompt = require('prompt')
 repl = require('repl')
-
 Graph = require('graph-common').Graph
 
 class CLI
